@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+       
+</head>
+<body>
+  <header class="game-header">
+  <h1>XO Game</h1>
+  {% if param %}
+  <h2>Hey {{param}}, find a friend and start to play!</h2>
+  {% endif %}
+</header>
+<!-- /.game-header -->
+<div class="board" id="board">
+    <div class="field" id="0"></div>
+    <div class="field" id="1"></div>
+    <div class="field" id="2"></div>
+    <div class="field" id="3"></div>
+    <div class="field" id="4"></div>
+    <div class="field" id="5"></div>
+    <div class="field" id="6"></div>
+    <div class="field" id="7"></div>
+    <div class="field" id="8"></div>
+</div>
+<form action="">
+    <button id="btn">REMATCH</button>
+</form>
+
+<script type="text/javascript" src="{{ url_for('static',filename='script.js') }}"></script>
+</body>
+</html>
