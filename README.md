@@ -37,7 +37,7 @@ The JavaScript script controls the game logic, including turn management, move v
 
 2. Navigate to the project directory:
    ```bash
-   cd XO_Flask
+   cd XO
    ```
 
 3. Install dependencies:
